@@ -1,0 +1,15 @@
+[2020-11-15 14:48:03.693] [sharedprocess] [info] main {"machineId":"37b63caeeef1da2790b20373505772389eb5a82b211a4ce0f713a8548aa40b6e","windowId":2}
+[2020-11-15 14:48:03.852] [sharedprocess] [error] [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/home/oem/Documents/Work/community_cafe/community_cafe/~/.vscode-root/User/snippets'
+[2020-11-15 14:48:43.725] [sharedprocess] [info] Starting to clean up unused language packs.
+[2020-11-15 14:49:18.810] [sharedprocess] [info] Installing extension: ms-python.python
+[2020-11-15 14:49:20.911] [sharedprocess] [info] Downloaded extension: ms-python.python undefined
+[2020-11-15 14:49:23.678] [sharedprocess] [info] Extracted extension to /root/.vscode/extensions/.ms-python.python-2020.11.358366026: ms-python.python
+[2020-11-15 14:49:23.678] [sharedprocess] [info] Renamed to /root/.vscode/extensions/ms-python.python-2020.11.358366026
+[2020-11-15 14:49:23.681] [sharedprocess] [info] Installation completed. ms-python.python
+[2020-11-15 14:49:24.162] [sharedprocess] [info] Installing extension: ms-toolsai.jupyter
+[2020-11-15 14:49:26.535] [sharedprocess] [info] Downloaded extension: ms-toolsai.jupyter undefined
+[2020-11-15 14:49:27.541] [sharedprocess] [info] Extracted extension to /root/.vscode/extensions/.ms-toolsai.jupyter-2020.11.358541065: ms-toolsai.jupyter
+[2020-11-15 14:49:27.541] [sharedprocess] [info] Renamed to /root/.vscode/extensions/ms-toolsai.jupyter-2020.11.358541065
+[2020-11-15 14:49:27.544] [sharedprocess] [info] Installation completed. ms-toolsai.jupyter
+[2020-11-15 14:49:28.082] [sharedprocess] [info] Extensions installed successfully: ms-toolsai.jupyter
+[2020-11-15 14:49:28.090] [sharedprocess] [info] Extensions installed successfully: ms-python.python
