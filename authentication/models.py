@@ -3,16 +3,18 @@ from common_utils.models import BaseModel
 # Create your models here.
 
 class User(BaseModel):
-
-    class Meta:
-        db_table = 'user'
     
     f_name=models.CharField(max_length=20)
     l_name=models.CharField(max_length=20)
-    email=models.EmailField(max_length=30)
+    email=models.EmailField(max_length=30,unique=True)
     country_code = models.CharField(max_length=3)
-    phone=models.CharField(max_length=10)
+    phone=models.CharField(max_length=10,unique=True)
     password=models.CharField(max_length=20)
+    
+
+    class Meta:
+        db_table = 'user'
+        unique_together = ('phone','email',)
 
 class UserAddress(BaseModel):
 

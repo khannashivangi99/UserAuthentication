@@ -3,18 +3,26 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from common_utils.utils import validate_jwt
+from authentication.serializer import UserSerializer
+from authentication.models import User
+from common_utils.utils import generate_jwt
 
 class Login(APIView):
-    
-    @validate_jwt
-    def get(self, request):
-        print("this is GET")
-        print(request.META["HTTP_AUTHORIZATION"])
-        
-        return Response({})
-
+    # /login | {email:"", password:""}
     def post(self, request, format=None):
-        print("this is post")
+        email=request.data.get("email")
+        password=request.data.get("password")
+        print(email , password)
+        
+        try:
+            user_obj=User.objects.get(email=email,password=password)
+        except Exception as e:
+            return Response({"message":"login failed"},status=401)  
+        else:
+            u=generate_jwt(user_obj)
+            return Response({"message":"login successful","token":u},status=200)      
+        print(user_obj)
+
         return Response({})
 
 class Logout(APIView):
